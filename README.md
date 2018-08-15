@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/sreucherand/compile-string-loader.svg?branch=master)](https://travis-ci.org/sreucherand/compile-string-loader)
 
+compile-string-loader module for Webpack.
+
+## Usage
+
 Compile and expose a string. Very handy for CSS in JS.
 
 ## Getting Started
