@@ -1,0 +1,39 @@
+{
+  "name": "compile-string-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rm -rf test/__expected__/",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sreucherand/compile-string-loader.git"
+  },
+  "author": "Sylvain Reucherand <hello@sylvainreucherand.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sreucherand/compile-string-loader/issues"
+  },
+  "homepage": "https://github.com/sreucherand/compile-string-loader#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^8.0.0-beta",
+    "eslint": "^5.3.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.2",
+    "raw-loader": "^0.5.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}
