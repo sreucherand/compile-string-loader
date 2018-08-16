@@ -1,5 +1,6 @@
 # compile-string-loader
 
+[![npm](https://img.shields.io/npm/v/compile-string-loader.svg)](https://www.npmjs.com/package/compile-string-loader)
 [![Build Status](https://travis-ci.org/sreucherand/compile-string-loader.svg?branch=master)](https://travis-ci.org/sreucherand/compile-string-loader)
 
 compile-string-loader module for Webpack.
