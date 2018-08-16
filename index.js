@@ -14,7 +14,19 @@ module.exports.pitch = function(request) {
   const childFilename = 'compile-string-output-filename';
   const subCache = 'subcache ' + __dirname + ' ' + this.request;
 
-  const childCompiler = this._compilation.createChildCompiler(
+  const rootCompilation = (function(loader) {
+    let compiler = loader._compiler;
+    let compilation = loader._compilation;
+
+    while (compiler.parentCompilation) {
+      compilation = compiler.parentCompilation;
+      compiler = compilation.compiler;
+    }
+
+    return compilation;
+  })(this);
+
+  const childCompiler = rootCompilation.createChildCompiler(
     'compile-string-loader',
     {
       filename: childFilename,
